@@ -11,7 +11,9 @@ public class Fibonaci {
         Scanner ss = new Scanner(System.in);
         int aa = 13;
         int yy = 0;
+        int zz = 0;
         long ff[] = new long[aa];
+         int tmp = 0;
         ff[0] = 0;
         ff[1] = 1;
         System.out.println("Input :");
@@ -20,8 +22,11 @@ public class Fibonaci {
             for (int ii=2; ii<=yy; ii++){
                 ff[ii]=ff[ii-1]+ff[ii-2];
             }
-            for (int ii=0;ii<=yy; ii++){
-                System.out.println(ff[ii]+" ");
+           for (int ii=1;ii<=yy; ii++){
+                
+                zz = (int) ff[ii];
+                tmp = tmp+zz;
+            }System.out.println(tmp);
             }
     }
     
