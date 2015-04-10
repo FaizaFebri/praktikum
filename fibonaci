@@ -1,0 +1,30 @@
+package fibonaci;
+import java.util.Scanner;
+
+
+public class Fibonaci {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner ss = new Scanner(System.in);
+        int aa = 13;
+        int yy = 0;
+        long ff[] = new long[aa];
+        ff[0] = 0;
+        ff[1] = 1;
+        System.out.println("Input :");
+        yy=ss.nextInt();
+        System.out.println("Output");
+            for (int ii=2; ii<=yy; ii++){
+                ff[ii]=ff[ii-1]+ff[ii-2];
+            }
+            for (int ii=0;ii<=yy; ii++){
+                System.out.println(ff[ii]+" ");
+            }
+    }
+    
+}
+
+
